@@ -4,7 +4,7 @@ const inputTask = document.querySelector('#taskInput')
 let listTask = document.querySelector('#tasksList')
 let taskLocale = []
 
-if (localStorage.getItem('tasks').length > 1) {
+if (localStorage.getItem('tasks')) {
     taskLocale = JSON.parse(localStorage.getItem('tasks'))
 }
 
